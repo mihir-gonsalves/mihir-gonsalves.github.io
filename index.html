@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<!-- ensures proper rendering and touch zooming for all devices  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Mihir Gonsalves</title>
+	<link id="mainStyleSheet" rel="stylesheet" href="style1.css" /> <!-- SWITCH HERE -->
+	<script src="functions.js"></script>
+</head>
+<body>
+	<div class="navbar">
+		<div class="navbar-header">
+			<h1>Hey, I'm Mihir</h1>
+		</div>
+
+		<div class="navbar-buttons">
+			<button class="home-button" onclick="goToHomePage()" type="button">Home</button>
+			<button class="qual-button" onclick="goToQualPage()" type="button">Qualifications</button>
+			<button class="serv-button" onclick="goToServPage()" type="button">My Services</button>
+			<button class="port-button" onclick="goToPortPage()" type="button">Technical Portfolio</button>
+			<button class="gpt-button" onclick="goToGPTPage()" type="button">AI-Generated Page</button>
+		</div>
+
+		<!-- <div class="toggle-button">
+			<button class="toggleCircle" onclick="toggleStyle()">Q</button>
+		</div> -->
+	</div>
+
+	<div class="index-content">
+		<div class="index-image">
+			<img src="MihirPortrait.jpg" alt="MihirPortrait.jpg" width="400" height="400">
+		</div>
+
+		<div class="index-description">
+			<p> I am a third year student at <a href = "https://www.tamu.edu/" target="_blank">Texas A&M University</a> majoring in Computer Engineering with a primary interest 
+			in software development. Currently, I am still searching for an internship. If you want to reach out, 
+			connect with me on <a href = "https://www.linkedin.com/in/mihir-gonsalves/" target="_blank">LinkedIn!</a></p>
+
+			<p> I also play the piano, compete in sim racing, love to review films, and enjoy cooking! </p>
+		</div>
+	</div>
+
+	<div class="index-highlights">
+		<div class="highlights-header">
+			<h2>The Highlights</h2>
+		</div>
+
+		<div class="highlights-projects">
+			<button class="highlight-project1" onclick="goToProject1Page()">TCP Server Threader</button>
+			<button class="highlight-project2" onclick="goToProject2Page()">Mock Linux Shell</button>
+			<button class="highlight-project3" onclick="goToProject3Page()">Sudoku Solver Z3</button>
+		</div>
+	</div>
+	
+	<div class="toggle-button">
+		<button class="toggleCircle" onclick="toggleStyle()">S</button>
+	</div>
+</body> 
+</html>

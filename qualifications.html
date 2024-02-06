@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- ensures proper rendering and touch zooming for all devices  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Mihir Gonsalves - Qualifications</title>
+	<link id="mainStyleSheet" rel="stylesheet" href="style1.css" /> <!-- SWITCH HERE -->
+    <script src="functions.js"></script>
+</head>
+<body>
+	<div class="navbar">
+		<div class="navbar-header">
+			<h1>My Tech Specs</h1>
+		</div>
+
+		<div class="navbar-buttons">
+			<button class="home-button" onclick="goToHomePage()" type="button">Home</button>
+			<button class="qual-button" onclick="goToQualPage()" type="button">Qualifications</button>
+			<button class="serv-button" onclick="goToServPage()" type="button">My Services</button>
+			<button class="port-button" onclick="goToPortPage()" type="button">Technical Portfolio</button>
+			<button class="gpt-button" onclick="goToGPTPage()" type="button">AI-Generated Page</button>
+		</div>
+	</div>
+
+    <div class="qualifications-content">
+        <div class="qualifications-image">
+            <img src="MihirResume.png" alt="resume.png" onclick="openPDF()" width="720" height="920">
+        </div>
+        
+        <div class="qualifications-skills">
+            <h2>Technical Skills</h2>
+            <p>In school I have completed over 70% of assignments in C++, Java, and Python</p>
+            <p>
+                I have a lot of experience with circuit design and analysis, both analog and digital.
+                I have extensive time in both the classroom learning theoretical concepts and in the
+                lab studying practical concepts.                
+            </p>
+            <p>Advanced with Raspberry PI 3b+ to use as a micro controller to support mini projects
+                like traffic lights, a wearable dog activity sensor, and a automatic hydroponic garden
+                system. 
+            </p>
+            <p>
+                I have excellent communication skills, I can write at a professional level, and
+                am able to adapt my personality to connect with anyone.
+            </p>
+        </div>
+
+        <div class="qualifications-interests">
+            <h2>Interests</h2>
+            <p>
+                Building open-source, collaborative projects that make noticable improvements in
+                people's daily lives.
+            </p>
+            <p>
+                Monitoring active data, analyzing trends, and making informed decisions afterwards.
+                I enjoy tinkering with car setups to improve track lap times at a high level.
+            </p>
+        </div>
+    </div>
+
+    <div class="toggle-button">
+		<button class="toggleCircle" onclick="toggleStyle()">S</button>
+	</div>
+</body>
+</html>

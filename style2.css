@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css?family=Jockey+One'); /* this is simply a font import */
+
+/* border: 4px dashed #FFFFFF; */
+/* use the above line to see the spacing of elements*/
+
+/* --------------------------------COMMON-------------------------------- */
+
+body {
+	font-family: 'Jockey One';
+	font-size: 20px;
+	background-color: #181818;
+}
+
+.navbar {
+	color: #FFFFFF;
+    overflow: visible;
+	background-image: linear-gradient(90deg, #3F3F3F, #181818);
+    background-color: #232323;
+	border: 5px solid #3F3F3F;
+    
+    padding: 7px;
+	margin: -8px;
+    z-index: 1px;
+
+	height: 100px;
+
+	position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-header {
+    position: absolute;
+    display: flex;
+    align-items:flex-start;
+
+	margin-top: -0.5%;
+	right: 14%;
+}
+
+.navbar-buttons {
+    position: relative;
+    justify-content: space-evenly;
+
+	height: 57%;
+	width: 1200px;
+
+	margin: -0.45%;
+	right: 10.35%;
+}
+
+.home-button, .qual-button, .serv-button, .port-button, .gpt-button {
+    font-family: 'Jockey One';
+    font-size: 20px;
+    font-weight: bold;
+	
+	height: 200%;
+	width: 15%;
+	
+	color: #FFFFFF;
+	background-color: #181818;
+	border-radius: 3px;
+
+    white-space: nowrap;
+	text-decoration: none;
+}
+
+.home-button:hover, .qual-button:hover, .serv-button:hover, .port-button:hover, .gpt-button:hover {
+    background-image: linear-gradient(160deg, #3F3F3F, #181818);
+	box-shadow: 0px 0px 0px 2px #3FFA7F;
+	
+	background-color: #3F3F3F;
+    color: #FFFFFF;
+    
+    cursor: pointer;
+}
+
+.toggleCircle {
+    font-family: 'Jockey One';
+	font-size: 20px;
+	color: #FFFFFF;
+	line-height: 5%;
+
+    width: 50px;
+    height: 50px;
+    background-color: #232323;
+    border-radius: 50%;
+    border: 5px dashed #3FFA7F;
+
+	position: absolute;
+
+    top: 5.25%;
+	left: 92.5%;
+}
+
+.toggleCircle:hover {
+    color:#000000;
+	border-color: #004B87;
+    background-color: #FFF0DB;
+
+    cursor: pointer;
+}
+
+
+/* --------------------------------INDEX-------------------------------- */
+
+.index-content {
+    position: relative;
+    margin-top: 65px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.index-image {
+   display: none;
+}
+
+.index-description {
+	color: #FFFFFF;
+    font-size: 30px;
+    width: 40%;
+
+    text-align: center;
+    overflow: visible;
+	display: flex;
+    flex-direction: column;
+    line-height: 107%;
+
+    background-color: #181818;
+	border: 5px solid #3F3F3F;
+	padding: 10px;
+}
+
+.index-description a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.index-description:hover a {
+	color: #3FFA7F;
+	text-decoration: underline;
+}
+
+.index-highlights {
+	margin-top: 50px;
+	margin-left: 15%;
+	
+	width: 70%;
+}
+
+.index-highlights h2 {
+	color: #FFFFFF;
+}
+
+.highlights-projects {
+	display: flex;
+    justify-content: space-evenly;
+}
+
+.highlight-project1, .highlight-project2, .highlight-project3 {
+	font-family: 'Jockey One';
+	font-size: 25px;
+	color: #FFFFFF;
+	background-color: #181818;
+
+	
+	border-radius: 10px;
+	padding: 30px 60px;
+
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.highlight-project1:hover, .highlight-project2:hover, .highlight-project3:hover {
+	background-image: linear-gradient(160deg, #3F3F3F, #181818);
+	box-shadow: 0px 0px 0px 2px #3FFA7F;
+	
+	background-color: #3F3F3F;
+    color: #3FFA7F;
+    
+    cursor: pointer;
+}
+
+.highlight-project1 {
+	border: 4px solid #AD00FF;
+}
+
+.highlight-project2 {
+	border: 4px solid #FF3D00;
+}
+
+.highlight-project3 {
+	border: 4px solid #00D1FF;
+}
+
+
+/* --------------------------------QUALIFICATIONS-------------------------------- */
+
+.qualifications-content {
+	position: relative;
+	margin-top: 30px;
+
+    overflow: visible;
+    background-color: #181818;
+
+	display: flex;
+    justify-content: space-evenly;
+	flex-direction: row;
+}
+
+.qualifications-image {
+	display: flex;
+    overflow: visible;
+	align-items: center;
+	justify-content: center;
+
+	position: absolute;
+
+    width: 30%;
+
+	border: 5px solid #3F3F3F;
+	padding: 1px 130px;
+
+	margin-top: 30px;
+}
+
+.qualifications-image:hover {
+	box-shadow: 0px 0px 15px 2px #3FFA7F;
+	cursor: pointer;
+}
+
+.qualifications-skills, .qualifications-interests {
+	position: absolute;
+
+	color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    text-align: center;
+
+    width: 20%;
+}
+
+.qualifications-skills {
+	right: 77.5%;
+}
+
+.qualifications-interests {
+	left: 77.5%;
+}
+
+/* --------------------------------SERVICES-------------------------------- */
+
+.services-content1 {
+    display: none;
+}
+
+.services-content2 {
+	position: relative;
+	margin-top: 30px;
+	right: 1%;
+
+    overflow: visible;
+
+	display: flex;
+    justify-content: space-evenly;
+	flex-direction: row;
+    width: 100%;
+}
+
+.service-inspiration2 {
+	color:#FFFFFF;
+	font-size: 22px;
+    font-weight: lighter;
+    line-height: 215%;
+	
+	margin-right: 4%;
+	padding: 1px 100px;
+
+	width: 50%;
+}
+
+.service-inspiration2 a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.service-inspiration2:hover a {
+	color: #3FFA7F;
+	text-decoration: underline;
+}
+
+.services-buttons {
+	position: relative;
+	right: 4%;
+
+	color: #FFFFFF;
+	font-size: 22px;
+    font-weight: lighter;
+
+    overflow: visible;
+
+	display: flex;
+    justify-content: flex-start;
+	flex-direction: column;
+    
+	height: 400px;
+	width: 30%;
+}
+
+.service1-button, .service2-button {
+	font-family: 'Jockey One';
+	font-size: 25px;
+	color: #FFFFFF;
+	background-color: #181818;
+
+	
+	border-radius: 10px;
+	padding: 30px 60px;
+
+	text-align: center;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.service1-button:hover, .service2-button:hover {
+	background-image: linear-gradient(160deg, #3F3F3F, #181818);
+	box-shadow: 0px 0px 0px 2px #3FFA7F;
+	
+	background-color: #3F3F3F;
+    color: #FFFFFF;
+    
+    cursor: pointer;
+}
+
+.service1-button {
+	border: 4px solid #0000FF;
+	margin-top: 6%;
+}
+
+.service2-button {
+	border: 4px solid #FF00DE;
+	margin-top: 10%;
+}
+
+/* -----------------------------SERVICES ESSAYS----------------------------- */
+
+.service-container {
+	position: relative;
+	margin-top: 100px;
+
+    overflow: visible;
+
+	display: flex;
+    justify-content: space-evenly;
+	flex-direction: row;
+}
+
+.service-window {
+	color:#FFFFFF;
+	font-size: 22px;
+    font-weight: lighter;
+    line-height: 215%;
+	
+	margin-right: 4%;
+	padding: 1px 100px;
+
+	width: 50%;
+}
+
+.service-window p {
+	border: 5px solid #3F3F3F;
+	background-image: linear-gradient(160deg, #3F3F3F, #181818);
+
+	margin-top: -2.5%; 
+	padding: 10px 100px 10px 45px;
+}
+
+.service-window p {
+	border: 5px solid #3F3F3F;
+	background-image: linear-gradient(160deg, #3F3F3F, #181818);
+
+	margin-top: -2.5%; 
+	padding: 10px 100px 10px 45px;
+}
+
+.service-window p a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.service-window:hover p a {
+	color: #3FFA7F;
+	text-decoration: underline;
+}
+
+.service-header {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+
+.service-header h3 {
+	color: #FFFFFF;
+
+	border: 5px solid #3F3F3F;
+	background-image: linear-gradient(160deg, #3F3F3F, #181818);
+
+	padding: 1px 50px;
+}
+
+.service-header a {
+	color: #3FFA7F;
+	text-decoration: none;
+
+	display: flex;
+	justify-content: center;
+	width: 20%;
+
+	padding-top: 4%;
+}
+
+.service-header:hover a {
+	text-decoration: underline;
+}
+
+/* --------------------------------PORTFOLIO-------------------------------- */
+
+
+.portfolio-content {
+	margin-top: 50px;
+	margin-left: 10.5%;
+	
+	width: 80%;
+}
+
+.completed-projects, .active-projects {
+	border: 5px solid #3F3F3F;
+	padding: 60px 60px;
+	
+	display: flex;
+    justify-content: space-between;
+}
+
+.completed-projects-header h2 {
+	color: #FFFFFF;
+}
+
+.active-projects-header h2 {
+	color: #FFFFFF;
+	margin-top: 5%;
+}
+
+.project1, .project2, .project3, .project4, .project5, .project6, .github {
+	font-family: 'Jockey One';
+	font-size: 25px;
+	color: #FFFFFF;
+	background-color: #181818;
+	
+	border-radius: 10px;
+	padding: 60px 60px;
+
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover, .github:hover {
+	background-image: linear-gradient(160deg, #3F3F3F, #181818);
+	box-shadow: 0px 0px 0px 2px #3FFA7F;
+	
+	background-color: #3F3F3F;
+	color: #3FFA7F;
+    
+    cursor: pointer;
+}
+
+.project1 {
+	border: 4px solid #AD00FF;
+}
+
+.project2 {
+	border: 4px solid #FF3D00;
+}
+
+.project3 {
+	border: 4px solid #00D1FF;
+}
+
+.project4 {
+	border: 4px solid #0000FF;
+}
+
+.project5 {
+	border: 4px solid #FFFF00;
+}
+
+.project6 {
+	border: 4px solid #FF0000;
+}
+
+.github {
+	position: absolute;
+	top: 4%;
+	left: 62%;
+
+	padding: 15px 45px;
+}
